@@ -8,18 +8,16 @@ cards = list(map(int, sys.stdin.readline().split()))
 
 picks = list(combinations(cards, 3))
 
-sums = []
-
-for i in picks:
-    sums.append(sum(i))
-
-sums.sort()
 result = []
 
-for j in sums:
-    if j <= m:
-        result.append(j)
+for i in picks:
+    sumed = sum(i)
+    if sumed <= m:
+        result.append(sumed)
 
-print(result[-1])
+print(max(result))
+
+    
+
 
     
