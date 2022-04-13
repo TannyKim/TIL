@@ -103,7 +103,7 @@
  
  for i in range(1, len(parent)):
      print(find(i), end=''
- 
+ ```
  
  ## 출처
   + https://youtu.be/Ha0w2dJa2Nk
