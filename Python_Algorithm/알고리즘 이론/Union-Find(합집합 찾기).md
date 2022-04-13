@@ -18,7 +18,7 @@
    - 하지만 이럴 경우, 1과 3이 연결되어 있는지는 한번에 파악할 수 없다.
    - 따라서 ***재귀함수***가 사용된다
    - 3이 가리키고 있는 2를 찾고, 2가 가리키고 있는 1을 찾는다. 이 과정을 통해 다음과 같은 배열이 완성된다.
-     ![image](https://user-images.githubusercontent.com/98008421/163126026-ad32430c-b1dd-4871-b0e5-20a55f8ba370.png)
+ ![image](https://user-images.githubusercontent.com/98008421/163126026-ad32430c-b1dd-4871-b0e5-20a55f8ba370.png)
 
    
  * 파이썬 코드
@@ -77,6 +77,33 @@
             parent[x] = find_parent(parent, parent[x])
          return parent[x]
      ```
+ 
+ ## 더 직관적인 코드
+ ```python
+ def find(x):
+     if x == parent[x]:
+         return x
+     else:
+          p = find(parent[x])
+          parent[x] = p
+          return parent[x]
+ def union(x, y):
+     x = find(x)
+     y = find(y)
+     
+     parent[y] = x
+     
+ parent = []
+ 
+ for i in range(0, 5):
+     parent.append(i)
+ 
+ union(1, 4)
+ union(2, 4)
+ 
+ for i in range(1, len(parent)):
+     print(find(i), end=''
+ 
  
  ## 출처
   + https://youtu.be/Ha0w2dJa2Nk
