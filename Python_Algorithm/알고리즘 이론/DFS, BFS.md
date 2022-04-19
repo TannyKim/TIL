@@ -9,9 +9,9 @@
   
   * 그림 예시
   - 그래프 준비(무방향성, 방문 기준: 번호가 낮은 인접 노드 부터, 시작 노드: 1)
-![image](https://user-images.githubusercontent.com/98008421/163948513-61ce8665-a508-4b27-b9eb-8eedd722f6ec.png)
+  + ![image](https://user-images.githubusercontent.com/98008421/163948513-61ce8665-a508-4b27-b9eb-8eedd722f6ec.png)
   - 스택 순서도 (눈으로 따라가 보자!)
-![image](https://user-images.githubusercontent.com/98008421/163956338-e306040d-12c5-46b5-9bbb-471cf22bb661.png)
+  + ![image](https://user-images.githubusercontent.com/98008421/163956338-e306040d-12c5-46b5-9bbb-471cf22bb661.png)
   - 탐색 순서
      + 1 -> 2 -> 7 -> 6 -> 8 -> 3 -> 4 -> 5
   
@@ -53,12 +53,12 @@
      3. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복.
    
    * 그림 예시
-    - 그래프 준비(무방향성, 방문 기준: 번호가 낮은 인접 노드 부터, 시작 노드: 1)
-![image](https://user-images.githubusercontent.com/98008421/163953210-a6106a2d-7f33-4540-a5bd-930d73f1fc44.png)
-    - 큐 순서도 (눈으로 따라가 보자!)
-![image](https://user-images.githubusercontent.com/98008421/163956525-6b80c0d0-378d-4664-984a-40f91692c764.png)
-    - 탐색 순서
-      + 1 -> 2 -> 3 -> 8 -> 7 -> 4 -> 5 -> 6
+   - 그래프 준비(무방향성, 방문 기준: 번호가 낮은 인접 노드 부터, 시작 노드: 1)
+   + ![image](https://user-images.githubusercontent.com/98008421/163953210-a6106a2d-7f33-4540-a5bd-930d73f1fc44.png)
+   - 큐 순서도 (눈으로 따라가 보자!)
+   + ![image](https://user-images.githubusercontent.com/98008421/163956525-6b80c0d0-378d-4664-984a-40f91692c764.png)
+   - 탐색 순서
+     + 1 -> 2 -> 3 -> 8 -> 7 -> 4 -> 5 -> 6
   
    * 파이썬 코드
    ```python
