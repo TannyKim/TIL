@@ -1,4 +1,4 @@
-## 예제를 통해 의 작동 구조를 살펴봅시다.
+## 예제를 통해 DFS의 작동 구조를 살펴봅시다.
  * 문제: https://www.acmicpc.net/problem/2667
  * 제출 코드
  ```python
