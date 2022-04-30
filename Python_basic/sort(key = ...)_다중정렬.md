@@ -27,3 +27,34 @@ result3 = sorted(array, key = lambda x: (x[1], -x[0]))
 print(result3)
 >>> [(0, 21, 'tanny'), (2, 23, 'lee'), (1, 23, 'yuki'), (3, 26, 'mikey')]
 ```
+
+## list.sort(key = len)
+   * 이 경우 정렬하되 원소의 길이를 기준으로 정렬하게 된다.
+   * 숫자는 오름차순 정렬(1, 2, 3 ...) / 문자는 사전순 및 영어, 한국어 순서로 정렬된다.
+   ```python
+   lst = [a, b, cc, ab]
+   
+   lst.sort()
+   print(lst)
+   
+   >> [a, ab, b, cc] # 사전순 정렬
+   
+   lst.sort(key = len)
+   print(lst)
+   >> [a, b, ab, cc] # 이후 길이 순 정렬
+   ```
+
+## list.sort(revesre = True)
+   * reverse = True 를 설정함으로써 역순(내림차순) 정렬이 가능하다.
+   * 기본값은 revesr = False로 오름차순이다.
+   ```python
+   num_list = [15, 22, 8, 79, 10]
+>>> num_list.sort(reverse=True)
+>>> print(num_list)
+[79, 22, 15, 10, 8]
+
+>>> print(sorted(['좋은하루','good_morning','굿모닝','niceday'], reverse=True))
+['좋은하루', '굿모닝', 'niceday', 'good_morning']
+```
+
+ 
