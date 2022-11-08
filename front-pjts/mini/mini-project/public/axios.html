@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <br />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          users: [],
+        },
+        methods: {},
+        created() {
+          var vm = this;
+          axios
+            .get(
+              "https://ws.audioscrobbler.com/2.0/?method=track.search&track=Believe&api_key=0ac1a7dea0fd97bcc5e0cb06a8871196&format=json"
+            )
+            .then(function (response) {
+              console.log(response);
+              vm.users = response.data;
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+        },
+      });
+    </script>
+  </body>
+</html>

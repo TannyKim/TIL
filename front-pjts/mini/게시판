@@ -1,0 +1,18 @@
+플레이리스트(주제)
+
+0. 메인화면
+   navbar
+   메인 스포티파이 로고하나
+
+1. 컴포넌트 목록
+
+- 등록(PlayRegist.vuePlayRegist.vue)
+- 삭제(PlayDelete.vue.vue)
+- 리스트 화면(PlayList.vue.vue)
+- 곡 상세(PlayDetail.vueetail.vue)
+
+2. 곡 정보 항목
+
+- 곡 이름
+- 가수
+-
