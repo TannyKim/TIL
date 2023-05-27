@@ -39,3 +39,11 @@ Arrays.sort(arr2, new Comparator<int[]>() {
 });
 
 ```
+
+## Collections.reverseOrder
+- Integer 배열인 것에 주의, 참조형 변수를 사용해야한다.
+```java
+Integer integerArray = Arrays.stream(intArray).boxed().toArray(Integer::new);
+Arrays.sort(integerArray, Collections.reverseOrder());
+
+```
